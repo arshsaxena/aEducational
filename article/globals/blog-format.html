@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+    <meta name="robots" content="noindex">
+    
+    <title>Blog Format | aBlogs by Arsh</title>
+
+    <meta name="description" content="Want to make contact forms for your website without subscribing to a service? Google is here to rescue! You can use Google Forms, it is a great and free service, all you need is a Google account.">
+    <meta name="author" content="Arsh Saxena">
+    
+    <link rel="stylesheet" href="/pages/globals/style.css">
+    <link rel="stylesheet" href="/other/globals/global-fonts.css">
+    <link rel="stylesheet" href="/other/globals/global-navbar/global-navbar.css">
+    <link rel="stylesheet" href="/other/globals/global-footer/global-footer.css">
+    <link rel="stylesheet" href="/other/globals/global-scrollbar.css">
+    <link rel="stylesheet" href="/other/globals/global-top-button/global-top-button.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="/pages/globals/global-side-col/global-side-col.css">
+    <link rel="stylesheet" href="/pages/globals/global-side-col/author/arsh-saxena/arsh-saxena.css">
+    <link rel="stylesheet" href="/pages/globals/global-side-col/author/pankhuri-saxena/pankhuri-saxena.css">
+    
+    <link rel="icon" href="/resources/first-page/icons/arsh.png">
+    <link rel="apple-touch-icon" href="./resources/gallery/chhota-baccha/arsh-face-flag.jpg">
+</head>
+<body>
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+    <script>
+        $(function(){
+        $("#nav").load("/other/globals/global-navbar/global-navbar.html"); 
+        $("#footer").load("/other/globals/global-footer/global-footer.html"); 
+        $("#top-button").load("/other/globals/global-top-button/global-top-button.html");
+        $("#popular-blogs").load("/pages/globals/global-side-col/global-side-col.html");
+        $("#card-container").load("/pages/globals/global-side-col/author/arsh-saxena/arsh-saxena.html");
+        });
+    </script>
+    <div class="container">
+        <span id="top-button"></span>
+        <nav class="nav" id="nav"> 
+        </nav>
+        <div class="main-head">
+            <div class="columns">
+                <div class="main-col">
+                    <div class="main-blog-div">
+                        <div class="heading">
+                            <span class="heading-text"><b>Title</b></span>
+                        </div>
+                        <div class="info">
+                            <span class="author">Author</span> 
+                            <span class="seperator">•</span> 
+                            <span class="updated">📆Date</span>
+                        </div>
+                        <div class="blog-text">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam odit non enim, quod fugiat accusantium tenetur eveniet fugit quaerat, officia nihil at exercitationem cum in? Aspernatur eum ea modi eos!
+                                <br><br>
+                                TEXT AND RESPECTIVE IMAGES
+                                <br><br>
+                            </p>
+                            <h2>GREAT SUCCESS!✌🏻😊</h2>
+                        </div>
+                    </div>
+                </div>
+                <div id="side-col-container">
+                    <div id="card-container">
+                    </div>
+                    <div id="popular-blogs">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <span class="footer-conatiner">
+        <footer>
+            <div class="footer" id="footer-part">
+                <div class="footer-text">
+                    <img src="/resources/first-page/icons/arsh.png" alt=""> &nbsp; 
+                    <span class="path">
+                        <span class="arrow"><i class="fa fa-angle-right"></i></span>
+                        <span class="page-name">Blog Format</span>
+                    </span>                  
+                </div>
+            </div>
+        </footer>
+        <footer id="footer"></footer>
+    </span>
+</body>
+</html>

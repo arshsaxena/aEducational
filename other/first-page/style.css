@@ -24,7 +24,7 @@ a{
     display: flex;
 }
 .main-col{
-    width: 75%;
+    width: 810px;
     padding: 5px;
     margin: 15px;
 }
@@ -38,10 +38,10 @@ a{
 .main-col .heading h1{
     margin: 0;
 }
-.edu-links{
+.blog-links{
     padding-top: 25px;
 }
-.edu-teaser{
+.blog-teaser{
     padding-bottom: 10px;
     padding-top: 15px;
     border-bottom: solid;
@@ -49,14 +49,14 @@ a{
     border-width: 3px;
     display: flex;
 }
-.edu-teaser:first-of-type{
+.blog-teaser:first-of-type{
     padding-bottom: 10px;
     padding-top: 0px;
     border-bottom: solid;
     border-color: #1d1d1f;
     border-width: 3px !important;
 }
-.edu-teaser:last-of-type{
+.blog-teaser:last-of-type{
     padding-bottom: 0px;
     padding-top: 15px;
     border-bottom: none;
@@ -95,25 +95,26 @@ a{
     font-size: 14px;
 }
 .seperator{
-    color: lawngreen;
+    color: rgb(255, 55, 55);
 }
-.side-col{
-    width: 25%;
-    padding: 5px;
-    margin: 15px;
+.blog-thumbnail{
+    pointer-events: all;
 }
-.side-col img{
-    width: 100%;
-}
-.author-intro{
-    background-color: #1b1b1f;
-    padding: 8px;
-}
-.author-description{
-    padding-top: 5px;
-}
-.author-name{
-    font-size: 28px;
+
+@media only screen and (max-device-width: 1024px) {
+    .main-head{
+        max-width: 1000px;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 5px;
+    }
+    .main-col{
+        width: 810px;
+        padding: 5px;
+        margin: 15px;
+        margin-left: 0;
+    }
 }
 
 /* Mobiles and some tabs */
@@ -179,6 +180,9 @@ a{
     }
     .updated{
         font-size: 12px;
+    }
+    #side-col-container{
+        display: none;
     }
     .side-col{
         width: 100%;

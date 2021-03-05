@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+    <meta name="robots" content="noindex">
+    
+    <title>Navigation Bar | Arsh Saxena</title>
+    
+    <link rel="stylesheet" href="global-navbar.css">
+    <link rel="icon" href="/resources/first-page/icons/arsh.png">
+</head>
+<body>
+<div class="nav-content">
+    <a href="/" class="logo">
+        <svg width="18" height="0" style="padding-top: 8px;" display="block">
+            <img src="/resources/first-page/icons/aeducational-logo.png" alt="">
+        </svg>
+    </a>
+    <div class="nav-icon">
+        <div class="bar one"></div>
+        <div class="bar two"></div>
+    </div>
+    <div class="nav-links">
+        <a href="/pages/about/" class="news" id="link-nav">&nbsp; English &nbsp;</a>
+        <a href="/pages/gallery/" class="howto" id="link-nav">&nbsp; <span id="hindi-text">हिन्दी</span> &nbsp;</a>
+        <a href="/pages/gallery/" class="android" id="link-nav">&nbsp; Android &nbsp;</a>
+        <a href="/pages/github/" class="ios" id="link-nav">&nbsp; iOS &nbsp;</a>
+        <a href="/pages/templates/" class="windows" id="link-nav">&nbsp; Windows &nbsp;</a>
+        <a href="/pages/downloads/" class="macos" id="link-nav">&nbsp; macOS &nbsp;</a>
+    </div>
+    <svg class="search-icon" viewBox="0 0 3.7041668 11.641667" height="44" width="14">
+    </svg>
+</div>
+<script>
+    const navIcon = document.querySelector(".nav-icon");
+    const nav = document.querySelector("nav");
+
+    navIcon.onclick = function () {
+        nav.classList.toggle('show');
+    }
+</script>
+</body>
+</html>

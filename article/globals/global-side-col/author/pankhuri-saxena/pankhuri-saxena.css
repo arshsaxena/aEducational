@@ -1,0 +1,62 @@
+.side-col-container{
+	width: 250%;
+}
+.pankhuri-card{
+    margin-top: 20px !important;
+    width: 265px !important;
+	background-color: #1d1d1f !important;
+	border-radius: 20px !important;
+	overflow: hidden !important;
+	text-align: center !important;
+}
+.pankhuri-card-header{
+	padding: 15px 0 !important;
+	background-color: #990000 !important;
+	background-image: linear-gradient(147deg, #990000 0%, #ff0000 74%) !important;
+}
+.pankhuri-card-header img{
+	width: 120px !important;
+    height: 120px !important;
+	object-fit: cover !important;
+	border-radius: 50% !important;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2) !important;
+}
+h4{
+    padding-top: 15px !important;
+    margin: 0;
+}
+h2{
+    margin-top: 0;
+}
+.pankhuri-card-body{
+	color: #eeeeee !important;
+}
+.pankhuri-card-body h2{
+    font-size: 30px !important;
+}
+.pankhuri-card-body .posts{
+	font-size: 15px !important; 
+    color: #ffffff !important;
+    padding: 5px !important;
+    border-radius: 8px !important;
+    background-color: #0083FD !important;
+}
+.pankhuri-card-body .social-media-list{
+	display: flex !important;
+	justify-content: center !important;
+	margin: 25px 0 !important;
+}
+.pankhuri-card-body .social-media-list img{
+	height: 27px !important;
+    width: auto !important;
+}
+.pankhuri-card-body .social-media-list a{
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
+
+@media only screen and (max-device-width: 813px) {
+	.pankhuri-card{
+		width: 100% !important;
+	}
+}
