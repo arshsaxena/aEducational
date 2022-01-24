@@ -1,26 +1,32 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+    <meta name="apple-mobile-web-app-capable" content="yes">
 
-    <title>Contact | Arsh Saxena</title>
+    <title>Contact | aEducational by Arsh</title>
     
-    <meta name="description" content="Contact | Arsh Saxena | To contact Arsh Saxena, fill this form. You will get a reply soon.">
+    <meta name="description" content="Contact | aEducational by Arsh | To contact Arsh Saxena, fill this form. You will get a reply soon.">
     <meta name="author" content="Arsh Saxena">
-    <meta name="keywords" content="Arsh Saxena, arsh.saxena02, GitHub, Coding, Indian, Student">
+    <meta name="keywords" content="Arsh Saxena, arsh.saxena02, GitHub, Coding, Indian, Student, aEducational, essay, speech, debate, letter">
     
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="/pages/globals/global-fonts.css">
-    <link rel="stylesheet" href="/pages/globals/global-navbar/global-navbar.css">
-    <link rel="stylesheet" href="/pages/globals/global-footer/global-footer.css">
-    <link rel="stylesheet" href="/pages/globals/global-scrollbar.css">
-    <link rel="stylesheet" href="/pages/globals/global-top-button/global-top-button.css">
-    <link rel="stylesheet" href="/pages/globals/global-preloader/global-preloader.css">
+    <link rel="stylesheet" href="/other/globals/global-fonts.css">
+    <link rel="stylesheet" href="/other/globals/global-navbar/global-navbar.css">
+    <link rel="stylesheet" href="/other/globals/global-footer/global-footer.css">
+    <link rel="stylesheet" href="/other/globals/global-scrollbar.css">
+    <link rel="stylesheet" href="/other/globals/global-top-button/global-top-button.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link rel="icon" href="/resources/first-page/icons/arsh.png">
+    <meta name="theme-color" content="#1d1d1f">
+    <meta name="msapplication-navbutton-color" content="#1d1d1f">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#1d1d1f">
+
+    <link rel="icon" href="/resources/first-page/icons/ae-logo.png">
+    <link rel="apple-touch-icon" href="./resources/first-page/icons/arsh-favicon.png">
 </head>
 <body>
     <script
@@ -30,21 +36,21 @@
     </script>
     <script> 
         $(function(){
-        $("#nav").load("/pages/globals/global-navbar/global-navbar.html"); 
-        $("#footer").load("/pages/globals/global-footer/global-footer.html"); 
-        $("#top-button").load("/pages/globals/global-top-button/global-top-button.html");
-        $("#preloader-div").load("/pages/globals/global-preloader/global-preloader.html");
+        $("#nav").load("/other/globals/global-navbar/global-navbar.html"); 
+        $("#footer").load("/other/globals/global-footer/global-footer.html"); 
+        $("#top-button").load("/other/globals/global-top-button/global-top-button.html");
         });
     </script>
-    <div class="preloader-div" id="preloader-div"></div>
     <div class="container">
         <span id="top-button"></span>
         <nav class="nav" id="nav"> 
         </nav>
         <div class="main-head">
-            <br>
-            <br>
             <form name="contactform" id="contactform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSdHqFD7rA1z9T3A9McCq8UnIrK7142JfFf0cenD4rEwCdk7YQ/formResponse?" target="hidden_iframe" onsubmit="submitted=true;" class="contactform">
+                <label class="label__website" style="display: none;">
+                    <span><span class="required-asteric">*</span>Website</span>
+                    <input type="text" name="entry.2054206786" id="entry.2054206786" required value="aEducational by Arsh">
+                </label>
                 <label class="label__fname">
                     <span><span class="required-asteric">*</span>First Name</span>
                     <input type="text" name="entry.171573973" id="entry.171573973" required placeholder="John" value="">
@@ -73,7 +79,6 @@
                 </div>
             </form>
             <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
-            <!-- <script src="assets/js/jquery.min.js"></script> -->
             <script type="text/javascript">var submitted=false;</script>
             <script type="text/javascript">
                 $('#contactform').on('submit', function(e) {
@@ -82,13 +87,13 @@
                 });
             </script>
         </div>
-    </div>
     <br><br>
+    </div>
     <span class="footer-conatiner">
         <footer>
             <div class="footer" id="footer-part">
                 <div class="footer-text">
-                    <img src="/resources/first-page/icons/arsh.png" alt=""> 
+                    <img src="/resources/first-page/icons/aeducational-logo.png" alt="arsh-img-footer"> 
                     <span class="path">
                         <span class="arrow"><i class="fa fa-angle-right"></i></span>
                         <span class="page-name">Contact</span>

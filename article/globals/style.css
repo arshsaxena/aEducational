@@ -34,13 +34,13 @@ a{
     padding-bottom: 5px;
 }
 .main-col .heading .heading-text{
-    font-size: 40px;
+    font-size: 35px;
     margin: 0;
 }
 .main-blog-div{
     background-color: #1b1b1f;
     padding: 10px;
-    border-color: red;
+    border-color: lawngreen;
     border-width: 2px;
     border-radius: 20px;
     border-style: solid;
@@ -78,15 +78,6 @@ code{
     margin-bottom: 0 !important;
     padding-bottom: 5px;
 }
-ol, ul{
-    font-size: 19px;
-    margin: 0 !important;
-    padding-left: 20px;
-    padding-top: 0;
-}
-ol li, ul li{
-    padding-bottom: 8px !important;
-}
 .screenshots img{
     width: 32.8% !important;
 }
@@ -100,7 +91,7 @@ ol li, ul li{
     font-size: 17px;
 }
 .seperator{
-    color: rgb(255, 55, 55);
+    color: lawngreen;
 }
 .side-col-container{
     width: 265px !important;
