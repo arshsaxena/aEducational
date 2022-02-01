@@ -57,7 +57,7 @@ h2{
     padding-right: 5px !important;
 }
 
-@media only screen and (max-device-width: 813px) {
+@media screen and (max-width: 813px) {
 	.arsh-card{
 		width: 100% !important;
 	}

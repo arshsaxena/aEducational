@@ -73,7 +73,6 @@ footer a{
 }
 .footer-last-text{
     padding-right: 20px;
-    padding-bottom: 15px;
 }
 footer .footer .footer-last-text a{
     color: #2997ff;
@@ -126,12 +125,12 @@ footer .footer .footer-last-text a:hover{
     color: green;
 }
 
-@media only screen and (max-device-width: 980px) and (orientation: landscape) {
+@media screen and (max-width: 980px) and (orientation: landscape) {
     .footer {
         width: 95% !important;
     }
 }
-@media only screen and (max-device-width: 980px) {
+@media screen and (max-width: 980px) {
     body {
         font-family: font-regular !important;
         overflow-x: hidden;

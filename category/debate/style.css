@@ -94,7 +94,7 @@ a{
     pointer-events: all;
 }
 
-@media only screen and (max-device-width: 1024px) {
+@media screen and (max-width: 1024px) {
     .main-head{
         max-width: 1000px;
         width: 95%;
@@ -111,7 +111,7 @@ a{
 }
 
 /* Mobiles and some tabs */
-@media only screen and (max-device-width: 813px) {
+@media screen and (max-width: 813px) {
     html{
         background-color: #1d1d1f;
         margin: 0px;

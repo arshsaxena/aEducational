@@ -98,7 +98,7 @@ footer .footer .footer-last-text a{
     color: green;
 }
 
-@media only screen and (max-device-width: 980px) {
+@media screen and (max-width: 980px) {
     body {
         font-family: font-regular !important;
         overflow-x: hidden;
