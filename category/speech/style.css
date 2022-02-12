@@ -1,8 +1,8 @@
-#link-nav.essay{
+#link-nav.speech{
     font-weight: bold;
     color: white;
 }
-#link-nav.essay::before{
+#link-nav.speech::before{
     content: "";
     position: absolute;
     left: 0;

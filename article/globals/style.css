@@ -14,45 +14,40 @@ a{
     text-decoration: none;
 }
 .main-head{
-    max-width: 1100px;
+    max-width: 980px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding: 5px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
-.columns{
-    display: flex;
-}
-.main-col{
-    max-width: 810px;
-    width: 100% !important;
-    padding: 5px;
-    margin: 15px;
-}
-.main-col .heading{
+.heading{
     font-size: 20px;
     padding-bottom: 5px;
 }
-.main-col .heading .heading-text{
-    font-size: 35px;
+.heading .heading-text{
+    font-size: 56px;
     margin: 0;
 }
 .main-blog-div{
-    background-color: #1b1b1f;
-    padding: 10px;
-    border-color: lawngreen;
-    border-width: 2px;
-    border-radius: 20px;
-    border-style: solid;
-    width: 771px;
-}
-.blog-img-div img{
+    color: #f5f5f7;
+    max-width: 700px;
     width: 100%;
-    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: #1d1d1f solid 2px;
+    padding-bottom: 20px;
+}
+.main-blog-div .info{
+    font-size: 14px;
+    line-height: 1.4;
+    color: #6e6e73;
+    letter-spacing: -.01em;
+    margin-bottom: 13px;
 }
 .blog-text p{
     font-size: 19px;
-    line-height: 25px;
+    line-height: 1.4211;
     letter-spacing: 0.5px;
 }
 .blog-text p:last-of-type{
@@ -78,23 +73,8 @@ code{
     margin-bottom: 0 !important;
     padding-bottom: 5px;
 }
-.screenshots img{
-    width: 32.8% !important;
-}
-.blog-text img{
-    width: 100%;
-    border-radius: 8px;
-}
-.info{
-    text-align: left;
-    color: #929292;
-    font-size: 17px;
-}
 .seperator{
     color: lawngreen;
-}
-.side-col-container{
-    width: 265px !important;
 }
 
 /* Mobiles and some tabs */
@@ -115,34 +95,20 @@ code{
         margin-left: auto;
         margin-right: auto;
         padding: 0px;
-        padding-top: 30px;
-        padding-bottom: 20px;
-    }
-    .columns{
-        display: inline !important;
+        margin-top: 20px;
     }
     .main-blog-div{
-        width: 92%;
+        width: 95%;
     }
-    .main-col{
-        width: 100%;
-        padding: 0;
-        margin-bottom: 10px !important;
-        margin: 0;
-    }
-    .main-col .heading  .heading-text{
-        font-size: 33px;
+    .heading  .heading-text{
+        font-size: 32px;
     }
     .info{
-        padding-top: 3px;
+        padding-bottom: 15px;
         width: 100%;
         text-align: left;
         color: #929292;
         font-size: 15px;
-    }
-    .blog-img-div img{
-        width: 100%;
-        border-radius: 10px;
     }
     .blog-text p{
         font-size: 17px;
@@ -166,7 +132,7 @@ code{
     .screenshots img{
         width: 49.1% !important;
     }
-    #side-col-container{
+    #author-container{
         width: 100%;
     }
 }
