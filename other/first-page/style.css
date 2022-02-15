@@ -72,16 +72,18 @@ a{
 .text-div h2{
     margin: 0px;
 }
-.p-for-pc{
+.p-teaser{
     font-size: 15px;
     margin-bottom: 3px;
     color: #919191;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-wrap: break-word;
+    -webkit-box-orient: vertical;
 }
-.p-for-mobile{
-    margin-bottom: 3px;
-    display: none;
-}
-.p-for-pc a:hover, .p-for-mobile a:hover{
+.p-teaser ~ a:hover, .p-teaser ~ a:focus{
     text-decoration: underline;
 }
 .info{
@@ -130,7 +132,6 @@ a{
         margin-left: auto;
         margin-right: auto;
         padding: 0px;
-        padding-top: 30px;
     }
     .blog-list{
         width: 100%;
@@ -142,24 +143,22 @@ a{
         font-size: 15px;
     }
     .text-div h2{
-        font-size: 17px;
+        font-size: 19px;
         min-height: 0px !important;
         padding-bottom: 5px;
     }
-    .p-for-pc{
-        display: none;
-    }
-    .p-for-mobile{
+    .p-teaser{
         display: inline;
         margin: 0;
-        font-size: 13px;
+        margin-top: 7px;
+        font-size: 15px;
         color: #919191;
-    }
-    .p-for-pc a:hover, .p-for-mobile a:hover{
-        text-decoration: none;
-    }
-    .p-for-pc a:focus, .p-for-mobile a:focus{
-        text-decoration: underline;
+        -webkit-line-clamp: calc(3/2);
+        display: -webkit-box;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        word-wrap: break-word;
+        -webkit-box-orient: vertical;
     }
     .info{
         padding-top: 3px;
