@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+
+    <title>Search | aEducational by Arsh</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/other/globals/global-fonts.css">
+    <link rel="stylesheet" href="/other/globals/global-navbar/global-navbar.css">
+    <link rel="stylesheet" href="/other/globals/global-footer/global-footer.css">
+    <link rel="stylesheet" href="/other/globals/global-scrollbar.css">
+    <link rel="stylesheet" href="/other/globals/global-top-button/global-top-button.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="icon" href="/resources/first-page/icons/ae-logo.png">
+</head>
+<body>
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+    <script>
+        $(function(){
+        $("#nav").load("/other/globals/global-navbar/global-navbar.html"); 
+        $("#footer").load("/other/globals/global-footer/global-footer.html"); 
+        $("#top-button").load("/other/globals/global-top-button/global-top-button.html");
+        });
+    </script>
+    <div class="container">
+        <span id="top-button"></span>
+        <nav class="nav" id="nav"> 
+        </nav>
+        <div class="maindiv">
+            <div class="search-container">
+                <input type="text" id="search-input" class="search-input" onkeyup="myFunction()" placeholder="Search aEducational" title="Type in a name" autocomplete="additional-name">
+                <ul id="article-list" class="article-list">
+                    <li>
+                        <div class="blog-container">
+                            <div class="blog-name">
+                                <a href="/article/speech-national-education-policy-2020/">
+                                    <h3>
+                                        <b>
+                                            Write a speech on “National Education Policy 2020.”
+                                        </b>
+                                    </h3>
+                                    <div class="blog-info">
+                                        <b>
+                                            <span class="updated">February 7, 2022</span>                                
+                                            <span class="seperator">•</span> 
+                                            <span class="author">Arsh Saxena</span>
+                                        </b>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="blog-container">
+                            <div class="blog-name">
+                                <a href="/article/letter-mr-kamal-agarwal-sports-instructor/">
+                                    <h3>
+                                        <b>
+                                            Mr Kamal Agarwal is the sports instructor in your school. The principal asked him to place an order for buying hockey sticks, tennis racquets, cricket kits, and the necessary sports accessories required. Mr Agarwal decides to place an order with M/S Chhabra Sports Equipment, New Delhi. Write a letter placing an order for the same.
+                                        </b>
+                                    </h3>
+                                    <div class="blog-info">
+                                        <b>
+                                            <span class="updated">January 24, 2022</span>                                
+                                            <span class="seperator">•</span> 
+                                            <span class="author">Arsh Saxena</span>
+                                        </b>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="blog-container">
+                            <div class="blog-name">
+                                <a href="/article/debate-should-schools-promote-coachings/">
+                                    <h3>
+                                        <b>
+                                            Write a debate on the motion “Should schools promote coaching institutes?”.
+                                        </b>
+                                    </h3>
+                                    <div class="blog-info">
+                                        <b>
+                                            <span class="updated">January 21, 2022</span>                                
+                                            <span class="seperator">•</span> 
+                                            <span class="author">Arsh Saxena</span>
+                                        </b>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="blog-container">
+                            <div class="blog-name">
+                                <a href="/article/essay-obligations-in-student-life/">
+                                    <h3>
+                                        <b>
+                                            Write an essay on “Obligations in Student Life.”
+                                    </h3>
+                                    <div class="blog-info">
+                                        <b>
+                                            <span class="updated">February 8, 2021</span>                                
+                                            <span class="seperator">•</span> 
+                                            <span class="author">Arsh Saxena</span>
+                                        </b>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <span class="footer-conatiner">
+        <footer>
+            <div class="footer" id="footer-part">
+                <div class="footer-text">
+                    <img src="/resources/first-page/icons/aEducational-logo.png" alt=""> &nbsp; 
+                    <span class="path">
+                        <span class="arrow"><i class="fa fa-angle-right"></i></span>
+                        <span class="page-name">Search</span>
+                    </span>                  
+                </div>
+            </div>
+        </footer>
+        <footer id="footer"></footer>
+    </span>
+    <script src="search.js"></script>
+</body>
+</html>

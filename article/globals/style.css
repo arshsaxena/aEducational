@@ -77,6 +77,82 @@ code{
     color: lawngreen;
 }
 
+/* Social Share Buttons */
+.share-btn-container{
+    text-align: center;
+    margin-top: 20px;
+}
+.share-heading{
+    background-color: #14c231;
+    position: relative;
+    bottom: 15px !important;
+    padding: 10.25px;
+    font-size: 17px;
+    border-radius: 8px;
+    margin-right: 5px;
+}
+.resp-sharing-button__link, .resp-sharing-button__icon {
+    display: inline-block;
+}
+.resp-sharing-button__link:not(:last-of-type) {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 5px;
+}
+.resp-sharing-button {
+    transition: 25ms ease-out;
+    height: 0;
+}
+.share-btn-container a i {
+    font-size: 25px;
+}
+.share-btn-container a {
+    transition: 500ms;
+}
+.share-btn-container img{
+    height: 41px;
+    border-radius: 8px;
+}
+.resp-sharing-button--twitter{
+    background-color: #1da1f2;
+}
+.resp-sharing-button--facebook{
+    background-color: #1977f3;
+}
+.resp-sharing-button--reddit{
+    background-color: #ff5700;
+}
+.resp-sharing-button--linkedin{
+    background-color: #0077b5;
+}
+.resp-sharing-button--email{
+    background-color: #1d6af0;
+}
+.resp-sharing-button--whatsapp{
+    background-color: #14c231;
+}
+.resp-sharing-button--telegram {
+    background-color: #0088CC;
+}
+.share-btn-container .fa-facebook {
+    color: white;
+}
+.share-btn-container .fa-twitter {
+    color: white;
+}
+.share-btn-container .fa-linkedin {
+    color: white;
+}
+.share-btn-container .fa-reddit {
+    color: white;
+}
+.share-btn-container .fa-whatsapp {
+    color: white;
+}
+.share-btn-container .fa-telegram {
+    color: white;
+}
+
 /* Mobiles and some tabs */
 @media screen and (max-width: 813px) {
     html{
@@ -134,5 +210,15 @@ code{
     }
     #author-container{
         width: 100%;
+    }
+    .share-btn-container{
+        line-height: 40px;
+    }
+    .share-heading{
+        display: none;
+    }
+    .share-btn-container img{
+        height: 36px !important;
+        border-radius: 50px !important;
     }
 }

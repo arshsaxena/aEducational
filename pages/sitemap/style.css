@@ -18,11 +18,13 @@ a{
     max-width: 980px;
     width: 100%;
     margin: auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 .maindiv a h1{
     font-size: 21px;
     color: white;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     border-bottom-style: solid;
     border-bottom-color: rgb(51, 51, 51);
     border-width: 1px;
@@ -34,24 +36,72 @@ a{
     font-size: 20px;
     z-index: 99999999999;
 }
+a.category-header-link{
+    color: white;
+}
+.category-header:hover{
+    color: white;
+    text-decoration: underline;
+}
+.category-letter, .category-debate, .category-essay, .category-speech, .category-paragraph{
+    border-bottom-style: solid;
+    border-bottom-color: rgb(51, 51, 51);
+    border-width: 1px;
+    padding-bottom: 20px;
+}
+.list{
+    max-width: 980px;
+    width: 100%;
+    column-count: 3;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.list ul{
+    margin-top: 0;
+    list-style-type: none;
+    padding: 0;
+    display: inline-block;
+}
+.list ul li a{
+    color: #2997ff;
+    line-height: 25px;
+}
+.list ul li a:hover{
+    text-decoration: underline;
+}
+.list li ul li{
+    padding-bottom: 5px;
+}
 .links{
     display: flex;
+    margin-top: 20px;
 }
-.col1, .col2, .col3, .col4{
-    width: 25%;
-}
-.links .heads{
-    font-size: 17px;
-}
-.links a{
-    color: #2997ff;
-    font-size: 17px;
-    line-height: 30px;
+.links h2{
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 .links a:hover{
     text-decoration: underline;
+}  
+.links a{
+    color: #2997ff;
+    font-size: 17px;
+    line-height: 25px;
+}
+.col1, .col2, .col3{
+    width: 33.33%;
 }
 
+@media screen and (max-width: 1023px) and (min-width: 824px){
+    .maindiv{
+        max-width: 980px;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 /* Mobiles and some tabs */
 @media screen and (max-width: 823px) {
     html{
@@ -65,34 +115,46 @@ a{
         padding: 0px;
         overflow-x: hidden;
     }
-    .maindiv a h1{
-        font-size: 26px;
+    .maindiv{
+        width: 90%;
+    }
+    .maindiv a h2{
+        font-size: 21px;
         color: white;
         padding-bottom: 5px;
         border-width: 1px;
-        margin: 15px;
-        margin-bottom: 0px;
+        margin-bottom: 20px;
+    }
+    .list{
+        column-count: 1;
+    }
+    .list ul{
+        display: block;
+        width: 100%;
     }
     .links{
         display: list-item;
-        padding: 15px;
+        padding: 0;
+        margin-top: 0px;
     }
     .col1, .col2, .col3{
         width: 100%;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding: 20px 0;
         border-bottom-style: solid;
         border-bottom-color: rgb(51, 51, 51);
         border-width: 1px;
     }
-    .col4{
-        width: 100%;
-        padding-top: 10px;
+    .col3{
+        padding-bottom: 0;
+        border: none;
     }
-    .links .heads{
+    .links h2{
         font-size: 21px;
     }
-    .links a{
+    .links div div{
+        display: inline-block;
+        column-count: 2;
+        width: 48%;
         color: #2997ff;
         font-size: 19px;
         line-height: 30px;

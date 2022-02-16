@@ -1,0 +1,178 @@
+html{
+    background-color: #1d1d1f;
+    list-style-type: none;
+}
+body{
+    height: 100%;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+}
+.maindiv{
+    max-width: 980px;
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.maindiv a h1{
+    font-size: 21px;
+    color: white;
+    padding-bottom: 10px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(51, 51, 51);
+    border-width: 1px;
+}
+.maindiv a{
+    color: #2997ff;
+    font-size: 17px;
+}
+.search-input {
+    font-family: font-regular;
+    background-color: #1d1d1f;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 19px;
+    padding: 15px 30px;
+    border: 0px solid rgb(0, 0, 0);
+    border-radius: 50px;
+    color: white;
+}
+.article-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: 65vh;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.article-list::-webkit-scrollbar{
+    display: none !important;
+}
+.article-list li a {
+    margin-top: -1px;
+    text-decoration: none;
+    font-size: 19px;
+    color: white;
+    display: block;
+}
+.article-list li a h3 {
+    margin: 0;
+    font-size: 21px;
+    line-height: 1.47059;
+}
+.blog-container{
+    padding: 20px 0px;
+    margin: 0 5px;
+    border-bottom: #1d1d1f solid 2px;
+    width: 100%;
+}
+.blog-name p{
+    margin: 0;
+    margin-top: 5px;
+    font-size: 18px;
+    line-height: 1.47059;
+}
+.blog-info{
+    font-size: 14px;
+    margin-top: 5px;
+    color: #6e6e73;
+}
+.seperator{
+    color: lawngreen;
+}
+
+/* Mobiles and some tabs */
+@media only screen and (min-device-width: 4000px){
+    .article-list{
+        height: auto;
+    }
+}
+@media only screen and (max-device-width: 1110px) and (min-device-width: 812px) {
+    .maindiv{
+        width: 87.5%;
+    }
+    .article-list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        height: 80vh;
+        overflow: hidden;
+        overflow-y: scroll;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-color: #1d1d1f;
+    }
+    #footer-part {
+        padding-left: 8px;
+    }
+}
+@media only screen and (max-device-width: 811px) {
+    html{
+        background-color: #1d1d1f;
+        margin: 0px;
+        padding: 0px;
+    }
+    body{
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+    }
+    .maindiv{
+        width: 100%;
+        margin: 30px 0 0;
+    }
+    .search-input {
+        font-family: font-regular;
+        background-color: #1d1d1f;
+        box-sizing: border-box;
+        width: 91%;
+        font-size: 17px;
+        padding: 10px 15px;
+        margin: 0 15px;
+        border: 0px solid rgb(0, 0, 0);
+        border-radius: 50px;
+        color: white;
+    }
+    .article-list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        height: 60vh;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+    .article-list li a h3 {
+        margin: 0;
+        font-size: 17px;
+        line-height: 1.47059;
+        font-weight: normal;
+        letter-spacing: 0px;
+    }
+    .blog-container{
+        all: unset;
+    }
+    .blog-name{
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-left: 20px;
+        margin-right: 20px;
+        border-bottom: #1d1d1f solid 2px;
+    }
+    .blog-name p{
+        display: none;
+    }
+    .blog-info{
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+}

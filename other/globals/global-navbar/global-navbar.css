@@ -11,6 +11,8 @@ nav {
     position: sticky;
     position: -webkit-sticky;
     top: 0;
+    left: 0;
+    right: 0;
     margin: 0;
     background: rgba(29, 29, 31, 0.8);
     -webkit-backdrop-filter: blur(20px);
@@ -24,7 +26,7 @@ nav {
     display: flex;
     justify-content: space-between;
 }
-.nav-content a {
+.nav-content a:not(.search){
     display: block;
     font-size: 17px;
     line-height: 44px;
@@ -32,20 +34,25 @@ nav {
     transition: all 0.3s;
     color: rgba(245, 245, 247, 0.767);
 }
-.nav-content a:hover, .nav-icon:hover, .search-icon:hover {
+.nav-content a:hover:not(.logo):not(.search) {
+    display: block;
+    line-height: 44px;
+    text-decoration: none;
+    transition: all 0.3s;
     color: white;
 }
-.logo{
-    height: 52px !important;
+.nav-icon:hover{
+    color: white;
 }
 .logo img{
     height: 30px;
     margin-bottom: -3%;
 }
 .nav-links {
-    padding-left: 70px;
+    padding-left: 60px;
+    padding-right: 50px;
     padding-top: 3px;
-    width: 100%;
+    width: 80%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -90,7 +97,9 @@ nav {
     transition: 0.5s;
 }
 .search-icon {
-    opacity: 0;
+    padding-top: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
 }
 .show .one {
     transform: rotate(45deg) translateY(5.5px);
@@ -155,17 +164,18 @@ nav {
         border-color: rgb(51, 51, 51);
         background: rgb(0, 0, 0);
     }
-    .nav-links a {
+    .nav-links a:not(.search) {
         height: 0;
-        width: 0;
+        max-width: 666px;
+        width: 80.5%;
         opacity: 0;
         overflow-x: hidden;
-        margin-right: 30px;
-        margin-left: 30px;
+        margin-right: auto;
+        margin-left: auto;
         transition: opacity 1.5s, height 2s;
         font-size: 17px;
     }
-    .nav-content a:hover {
+    .nav-content a:hover:not(.search) {
         display: block;
         font-size: 17px;
         line-height: 44px;
@@ -180,20 +190,23 @@ nav {
         padding-top: 15px;
         padding-bottom: 2.5px;
     }
-    .letter, .speech, .essay, .paragraph{
+    .letter, .speech, .essay, .debate{
         border-bottom-style: solid;
         border-width: 1.5px;
         border-color: rgb(51, 51, 51);
         padding-top: 2.5px;
         padding-bottom: 2.5px;
     }
+    .show .nav-links a:last-of-type{
+        border-bottom: none;
+    }
     .show .nav-links a {
         opacity: 1;
-        width: auto;
         height: auto;
     }
     .nav-links{
         text-align: left;
+        padding: 0;
     }
     .nav-icon {
         order: 1;
