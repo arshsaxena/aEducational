@@ -32,7 +32,7 @@ function init() {
     );
     whatsappBtn.setAttribute(
         "href",
-        `https://api.whatsapp.com/?text=${postTitle}:%20${postUrl}`
+        `https://api.whatsapp.com/send?text=${postTitle}:%20${postUrl}`
     );
     telegramBtn.setAttribute(
         "href",

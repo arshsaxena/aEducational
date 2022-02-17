@@ -106,7 +106,7 @@ body {
     resize: none;
 }
 .required-asteric{
-    color: lawngreen;
+    color: red;
     text-align: left;
 }
 .reset{

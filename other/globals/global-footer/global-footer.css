@@ -204,7 +204,7 @@ footer .footer .footer-last-text a:hover{
     .footer-checkbox{
         display: inline;
     }
-    .discover, .byarsh, .connect, .social, .legal{
+    .discover, .connect, .social, .legal{
         border-bottom-style: solid;
         border-width: 1px;
         border-color: #404044;

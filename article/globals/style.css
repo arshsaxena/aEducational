@@ -30,7 +30,7 @@ a{
     margin: 0;
 }
 .main-blog-div{
-    color: #f5f5f7;
+    color: rgba(243, 243, 243, 0.897);
     max-width: 700px;
     width: 100%;
     margin-left: auto;

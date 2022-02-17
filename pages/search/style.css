@@ -48,6 +48,7 @@ a{
     list-style-type: none;
     padding: 0;
     margin: 0;
+    margin-top: 20px;
     height: 65vh;
     overflow: hidden;
     overflow-y: scroll;
@@ -102,12 +103,10 @@ a{
         list-style-type: none;
         padding: 0;
         margin: 0;
+        margin-top: 20px;
         height: 80vh;
         overflow: hidden;
         overflow-y: scroll;
-        border-bottom-left-radius: 20px;
-        border-bottom-right-radius: 20px;
-        background-color: #1d1d1f;
     }
     #footer-part {
         padding-left: 8px;
@@ -145,6 +144,7 @@ a{
         list-style-type: none;
         padding: 0;
         margin: 0;
+        margin-top: 20px;
         height: 60vh;
         overflow: hidden;
         overflow-y: scroll;
