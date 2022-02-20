@@ -67,6 +67,9 @@ a{
     letter-spacing: 0px;
     margin: 0;
 }
+.text-div a:hover h2, .text-div a:focus h2{
+    color: white;
+}
 .p-teaser{
     font-size: 15px;
     margin-bottom: 3px;
@@ -96,6 +99,9 @@ a{
     padding: 10px;
     border-radius: 50px;
     border: 1px solid transparent;
+}
+#loadMore:hover, #loadMore:focus{
+    background-color: #007bffd3;
 }
 .info{
     text-align: right;

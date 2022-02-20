@@ -60,13 +60,16 @@ a{
     margin-top: -1px;
     text-decoration: none;
     font-size: 19px;
-    color: white;
+    color: rgba(224, 224, 224, 0.938);
     display: block;
 }
 .article-list li a h3 {
     margin: 0;
     font-size: 21px;
-    line-height: 1.47059;
+    line-height: 1.37059;
+}
+.article-list li a:hover h3, .article-list li a:focus h3{
+    color: white;
 }
 .blog-container{
     padding: 20px 0px;
