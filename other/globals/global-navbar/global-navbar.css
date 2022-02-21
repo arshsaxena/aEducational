@@ -11,12 +11,10 @@ nav {
     position: sticky;
     position: -webkit-sticky;
     top: 0;
-    left: 0;
-    right: 0;
     margin: 0;
     background: rgba(29, 29, 31, 0.8);
-    -webkit-backdrop-filter: blur(20px);
-    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
     z-index: 1;
 }   
 .nav-content {
@@ -26,7 +24,7 @@ nav {
     display: flex;
     justify-content: space-between;
 }
-.nav-content a:not(.search){
+.nav-content a {
     display: block;
     font-size: 17px;
     line-height: 44px;
@@ -34,28 +32,22 @@ nav {
     transition: all 0.3s;
     color: rgba(245, 245, 247, 0.767);
 }
-.nav-content a:hover:not(.logo):not(.search) {
-    display: block;
-    line-height: 44px;
-    text-decoration: none;
-    transition: all 0.3s;
-    color: white;
-}
-.nav-icon:hover{
+.nav-content a:hover, .nav-icon:hover, .search-icon:hover {
     color: white;
 }
 .logo img{
-    height: 30px;
-    margin-bottom: -3%;
+    height: 25px;
 }
 .nav-links {
-    padding-left: 60px;
-    padding-right: 50px;
+    padding-left: 70px;
     padding-top: 3px;
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+.nav-links ul{
+    display: none;
 }
 #link-nav{
     position: relative;
@@ -97,9 +89,8 @@ nav {
     transition: 0.5s;
 }
 .search-icon {
-    padding-top: 4px;
-    cursor: pointer;
-    transition: all 0.3s;
+    opacity: 0;
+    display: none;
 }
 .show .one {
     transform: rotate(45deg) translateY(5.5px);
@@ -130,10 +121,10 @@ nav {
         background-color: #1d1d1f;
     }
     nav{
-        position: -webkit-sticky;
         position: sticky;
+        position: -webkit-sticky;
         background: rgb(29, 29, 31);
-        -webkit-backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: none;
         backdrop-filter: none;
     }
     .nav-links {
@@ -147,6 +138,29 @@ nav {
         flex-direction: column;
         justify-content: flex-start;
         transition: all 2s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+    .nav-links a:not(.nav-links ul li a){
+        display: none;
+    }
+    .nav-links ul{
+        list-style-type: none;
+        display: block;
+        max-width: 664px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0px 40px 0px;
+        height: auto;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        overflow-y: auto;
+    }
+    .nav-links ul li{
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .nav-links ul li a{
+        margin: 0;
     }
     #link-nav{
         position: relative;
@@ -164,24 +178,15 @@ nav {
         border-color: rgb(51, 51, 51);
         background: rgb(0, 0, 0);
     }
-    .nav-links a:not(.search) {
+    .nav-links a {
         height: 0;
-        max-width: 666px;
-        width: 80.5%;
+        width: 0;
         opacity: 0;
         overflow-x: hidden;
-        margin-right: auto;
-        margin-left: auto;
+        margin-right: 30px;
+        margin-left: 30px;
         transition: opacity 1.5s, height 2s;
         font-size: 17px;
-    }
-    .nav-content a:hover:not(.search) {
-        display: block;
-        font-size: 17px;
-        line-height: 44px;
-        text-decoration: none;
-        transition: all 0.3s;
-        color: rgba(245, 245, 247, 0.767);
     }
     .home{
         border-bottom-style: solid;
@@ -190,23 +195,20 @@ nav {
         padding-top: 15px;
         padding-bottom: 2.5px;
     }
-    .letter, .essay, .debate, .speech, .notice{
+    .letter, .debate, .essay, .speech{
         border-bottom-style: solid;
         border-width: 1.5px;
         border-color: rgb(51, 51, 51);
         padding-top: 2.5px;
         padding-bottom: 2.5px;
     }
-    .show .nav-links a:last-of-type{
-        border-bottom: none;
-    }
     .show .nav-links a {
         opacity: 1;
+        width: auto;
         height: auto;
     }
     .nav-links{
         text-align: left;
-        padding: 0;
     }
     .nav-icon {
         order: 1;
@@ -226,11 +228,10 @@ nav {
         order: 2;
     }
     .logo img{
-        height: 30px;
-        vertical-align: initial;
-        margin-bottom: -6px;
+        height: 25px;
     }
     .search-icon {
+        display: inline-block;
         order: 3;
     }
 }
@@ -245,6 +246,6 @@ img {
     user-select: none;
 }
 ::selection {
-    background: green; 
+    background: green;
     color: white;
 }
