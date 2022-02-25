@@ -10,26 +10,12 @@ body {
     font-family: font-regular;
     color: white;
 }
-#link-nav.contact{
-    font-weight: bold;
-    color: white;
-}
-#link-nav.contact::before{
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 2px;
-    width: 100%;
-    transition: width 0.2s ease-out;
-    background-color: lawngreen;
-}
 .container{
     background-image: url(/resources/contact/imgs/using-iphone.jpg);
     background-size: cover;
 }
 .main-head{
-    padding-top: 33px;
+    padding-top: 35px;
     text-align: left;
     color: white;
     max-width: 1154px;
@@ -53,7 +39,7 @@ body {
     max-width: 980px;
     width: 100%; 
     margin: auto; 
-    padding: 0px 30px;
+    padding: 0px 30px;  
     padding-top: 50px;
     background-color: rgba(29, 29, 31, 0.5);
     backdrop-filter: blur(10px);
@@ -110,7 +96,7 @@ body {
     text-align: left;
 }
 .reset{
-    width: 115px;
+    width: 150px;
     text-align: center;
     margin: auto;
     padding-bottom: 25px;
@@ -120,19 +106,19 @@ body {
     width: 115px;
     padding: 10px;
     font-family: font-regular;
-    font-size: 25px !important;
+    font-size: 20px !important;
     color: white !important;
-    background-color: #007aff !important;
+    background-color: red !important;
     border-color: transparent;
     border-radius: 50px !important;
     cursor: pointer;
 }
 .reset-button:hover{
     color: white;
-    background-color: lawngreen !important;
+    background-color: rgb(192, 0, 0) !important;
 }
 .submit{
-    width: 115px;
+    width: 150px;
     text-align: center;
     margin: auto;
     padding-bottom: 25px;
@@ -141,18 +127,30 @@ body {
 .submit-button{
     padding: 10px;
     font-family: font-regular;
-    font-size: 25px !important;
+    font-size: 20px !important;
     color: white !important;
-    background-color: #007aff !important;
+    background-color: green !important;
     border-color: transparent;
     border-radius: 50px !important;
     cursor: pointer;
 }
 .submit-button:hover{
     color: white;
-    background-color: green !important;
+    background-color: rgb(0, 88, 0) !important;
 }
 
+@media screen and (min-width: 769px) and (max-width: 1024px){
+    .nav-content{
+        padding: 0px 20px !important;
+    }
+    .nav-links{
+        padding-left: 0px !important;
+    }
+    .main-head{
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
 @media screen and (max-width: 768px) {
     html{
         background-color: #1d1d1f;
@@ -177,6 +175,7 @@ body {
         padding-left: 0px !important;
     }
     .main-head{
+        padding-top: 80px;
         padding-right: 15px;
         padding-left: 15px;
     }
@@ -232,7 +231,7 @@ body {
         resize: none;
     }
     .required-asteric{
-        color: lawngreen;
+        color: red;
     }
     .reset{
         max-width: 980px;
@@ -241,20 +240,20 @@ body {
         background-color: #1d1d1f;
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
-        padding-bottom: 20px;
+        padding-bottom: 10px;
+        width: 100%;
     }
     .reset-button{
         padding: 10px;
         font-family: font-regular;
         font-size: 23px !important;
         color: white !important;
-        background-color: #007aff !important;
         border-color: transparent;
-        border-radius: 50px !important;
+        border-radius: 10px !important;
         transition-property: none;
     }
     .reset-button:focus{
-        background-color: green;
+        background-color: rgb(192, 0, 0);
         color: white;
     }
     .submit{
@@ -264,20 +263,20 @@ body {
         background-color: #1d1d1f;
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
-        padding-bottom: 20px;
+        padding-bottom: 10px;
+        width: 100%;
     }
     .submit-button{
         padding: 10px;
         font-family: font-regular;
         font-size: 23px !important;
         color: white !important;
-        background-color: #007aff !important;
         border-color: transparent;
-        border-radius: 50px !important;
+        border-radius: 10px !important;
         transition-property: none;
     }
     .submit-button:focus{
-        background-color: green;
+        background-color: rgb(0, 88, 0);
         color: white;
     }
 }

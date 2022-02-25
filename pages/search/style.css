@@ -92,7 +92,7 @@ a{
     color: lawngreen;
 }
 
-/* Mobiles and some tabs */
+
 @media only screen and (min-device-width: 4000px){
     .article-list{
         height: auto;

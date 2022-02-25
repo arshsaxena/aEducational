@@ -131,7 +131,7 @@ a{
     }
 }
 
-/* Mobiles and some tabs */
+
 @media screen and (max-width: 950px) {
     html{
         background-color: #1d1d1f;
