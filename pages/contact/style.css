@@ -15,7 +15,7 @@ body {
     background-size: cover;
 }
 .main-head{
-    padding-top: 35px;
+    padding-top: 33px;
     text-align: left;
     color: white;
     max-width: 1154px;
@@ -174,8 +174,7 @@ body {
     .nav-links{
         padding-left: 0px !important;
     }
-    .main-head{
-        padding-top: 80px;
+    .main-head{;
         padding-right: 15px;
         padding-left: 15px;
     }

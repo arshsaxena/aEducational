@@ -40,6 +40,7 @@ nav {
 }
 .nav-links {
     padding-left: 70px;
+    padding-right: 50px;
     padding-top: 3px;
     width: 100%;
     display: flex;
@@ -89,8 +90,7 @@ nav {
     transition: 0.5s;
 }
 .search-icon {
-    opacity: 0;
-    display: none;
+    margin-top: 4px;
 }
 .show .one {
     transform: rotate(45deg) translateY(5.5px);
@@ -132,6 +132,7 @@ nav {
         top: 0;
         right: 0;
         height: 0;
+        padding-right: 0;
         width: 100%;
         margin-top: 49px;
         background: transparent;

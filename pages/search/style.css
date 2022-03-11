@@ -10,6 +10,7 @@ body{
     background-color: black;
     color: white;
     overflow-x: hidden;
+    font-weight: normal !important;
 }
 a{
     text-decoration: none;
@@ -43,13 +44,15 @@ a{
     border: 0px solid rgb(0, 0, 0);
     border-radius: 50px;
     color: white;
+    margin-bottom: 10px;
 }
 .article-list {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    margin-top: 20px;
+    margin-top: 10px;
     height: 65vh;
+    border-top: 3px solid #1d1d1f;
     overflow: hidden;
     overflow-y: scroll;
 }
