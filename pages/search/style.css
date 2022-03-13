@@ -75,7 +75,7 @@ a{
     color: white;
 }
 .blog-container{
-    padding: 20px 0px;
+    padding: 15px 0px;
     margin: 0 5px;
     border-bottom: #1d1d1f solid 2px;
     width: 100%;
@@ -89,6 +89,7 @@ a{
 .blog-info{
     font-size: 14px;
     margin-top: 5px;
+    margin-bottom: 5px;
     color: #6e6e73;
 }
 .seperator{

@@ -34,6 +34,7 @@ nav {
 }
 .nav-content a:hover, .nav-icon:hover, .search-icon:hover {
     color: white;
+    cursor: pointer;
 }
 .logo img{
     height: 25px;

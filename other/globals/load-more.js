@@ -1,9 +1,10 @@
 $(document).ready(function(){
-    $(".blog-links").slice(0, 10).show();
+    $(".blog-teaser-container").slice(0, 10).show();
     $("#loadMore").on("click", function(e){
+        console.log("arsh")
         e.preventDefault();
-        $(".blog-links:hidden").slice(0, 10).slideDown();
-        if($(".blog-links:hidden").length == 0) {
+        $(".blog-teaser-container:hidden").slice(0, 10).slideDown();
+        if($(".blog-teaser-container:hidden").length == 0) {
             $("#loadMore").text("That's all!").addClass("noContent");
         }
     });
